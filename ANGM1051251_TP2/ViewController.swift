@@ -8,18 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController{
+    
+      
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
+
+        //_ = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: (Selector("tournerLaPage")), userInfo: nil, repeats: false)
+
+    }
+    func tournerLaPage() {
+        performSegue(withIdentifier: "ListeAffiches", sender:self)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
 
 }
 
